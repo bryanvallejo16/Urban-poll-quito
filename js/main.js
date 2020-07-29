@@ -106,7 +106,7 @@ $(document).ready(function() {
   var POINT_COLOR = 'DarkGray'; // point color, eg `black` or `rgba(10, 100, 44, 0.8)`
   var POINT_RADIUS = 4; // radius of each data point
 
-  var X_AXIS = 'Worked hours/month';  // x-axis label and label in tooltip
+  var X_AXIS = 'Worked hours/week';  // x-axis label and label in tooltip
   var Y_AXIS = 'Age'; // y-axis label and label in tooltip
 
   var SHOW_GRID = true; // `true` to show the grid, `false` to hide
