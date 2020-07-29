@@ -92,7 +92,7 @@ var poll=L.geoJson(poll, {
 
 $(document).ready(function() {
 
-  var TITLE = 'Relation between age and worked hours/month';
+  var TITLE = 'Relation between age and worked hours/week';
 
   var POINT_X = 'hours'; // column name for x values in data.csv
   var POINT_X_PREFIX = ''; // prefix for x values, eg '$'
