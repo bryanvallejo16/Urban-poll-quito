@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>™Urban Polls</title>
+
+		<!--link to stylesheet-->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- link to leaflet stylesheet-->
+		<link rel="stylesheet" href="css/leaflet.css">
+
+	</head>
+	<body>
+		<!--the sequence of elements called matters!-->
+		<!-- title of your map-->
+		<h1> 🌆 Poll for Street Environment Awareness - Quito, Ecuador   </h1>
+		<!-- division div for the map -->
+		<div id="map"></div>
+		<div id="info-pane" class="leaflet-bar chart-container">
+  	<canvas id="container" ></canvas></div>
+		<!-- Load jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Load Chart.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+		<!-- Load D3.js to read csv files -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+		
+		<!-- link to leaflet javascript library-->
+		<script src="js/leaflet-src.js"></script>
+		<!-- load Esri Leaflet because we want to use an Esri basemap -->
+		<script src="js/esri-leaflet.js" ></script>
+
+
+
+
+		<!--link to the files that contains geoJson data-->
+
+		<script src="data/poll.geojson" type="text/javascript"> </script>
+
+		<!-- link to main javascript file -->
+		<script src="js/main.js"></script>
+
+	</body>
+<html>
