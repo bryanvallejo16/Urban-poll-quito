@@ -92,7 +92,7 @@ var poll=L.geoJson(poll, {
 
 $(document).ready(function() {
 
-  var TITLE = 'Relation between Age and Worked hours/month';
+  var TITLE = 'Relation between age and worked hours/month';
 
   var POINT_X = 'hours'; // column name for x values in data.csv
   var POINT_X_PREFIX = ''; // prefix for x values, eg '$'
@@ -106,7 +106,7 @@ $(document).ready(function() {
   var POINT_COLOR = 'DarkGray'; // point color, eg `black` or `rgba(10, 100, 44, 0.8)`
   var POINT_RADIUS = 4; // radius of each data point
 
-  var X_AXIS = 'Worked hours/mont';  // x-axis label and label in tooltip
+  var X_AXIS = 'Worked hours/month';  // x-axis label and label in tooltip
   var Y_AXIS = 'Age'; // y-axis label and label in tooltip
 
   var SHOW_GRID = true; // `true` to show the grid, `false` to hide
