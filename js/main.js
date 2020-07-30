@@ -57,7 +57,8 @@ function getColor(d) {
                d === '2 Affected'       	? "#fdcc8a" :
                d === '3 Indiferent'     	? "#ffffb2" :
                d === '4 Little affected'  	? "#74a9cf" :
-                                          "#045a8d" ;
+		d === '5 Non affected'  	? "#045a8d" :
+                                          "#D3D3D3" ;
                       }
 
 var myStyle = function style(feature) {
@@ -222,7 +223,7 @@ info.addTo(map);
 
     var div = L.DomUtil.create('div', 'info legend'),
         labels = ['<strong>Level of satisfaction</strong>'],
-        categories=['1 Very affected', '2 Affected', '3 Indiferent', '4 Little affected', '5 Non affected'];
+        categories=['0 No answer','1 Very affected', '2 Affected', '3 Indiferent', '4 Little affected', '5 Non affected'];
 // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < categories.length; i++) {
         div.innerHTML +=
