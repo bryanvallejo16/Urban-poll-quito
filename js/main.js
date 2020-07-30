@@ -208,7 +208,7 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h2>🌳 </h2>'+'<h3>  Is your street affected by garbage? </h3>' +  (props ?
+    this._div.innerHTML = '<h3> 🌳 Q1 - Is your street affected by garbage? </h3>' +  (props ?
          props.effect + ' 🏡👨‍👩‍👦' +'<br/>'
         : 'Hover the mouse over the poll. Try clicking to interact.'+
         '<br/>'+'Level of Satisfaction: 1 😡 2 😠 3 😐 4 🙂 5 😁');
