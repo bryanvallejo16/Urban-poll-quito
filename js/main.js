@@ -104,7 +104,7 @@ $(document).ready(function() {
   var POINT_Y_POSTFIX = ''; // postfix for x values, eg ' kg'
 
   var POINT_NAME = 'ID'; // point names that appear in tooltip
-  var POINT_COLOR = 'DarkGray'; // point color, eg `black` or `rgba(10, 100, 44, 0.8)`
+  var POINT_COLOR = '#34495E'; // point color, eg `black` or `rgba(10, 100, 44, 0.8)`
   var POINT_RADIUS = 4; // radius of each data point
 
   var X_AXIS = 'Age of respondents';  // x-axis label and label in tooltip
@@ -223,7 +223,7 @@ info.addTo(map);
 
     var div = L.DomUtil.create('div', 'info legend'),
         labels = ['<strong>Level of satisfaction</strong>'],
-        categories=['0 No answer','1 Very affected', '2 Affected', '3 Indiferent', '4 Little affected', '5 Non affected'];
+        categories=['1 Very affected', '2 Affected', '3 Indiferent', '4 Little affected', '5 Non affected'];
 // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < categories.length; i++) {
         div.innerHTML +=
