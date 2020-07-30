@@ -29,7 +29,7 @@ body{
 .info h3 {
 		font-size: 22px;
 		font-family:  "Times New Roman", Times, serif;
-		text-decoration: ;
+		text-decoration: underlined;
 		text-shadow: 2px 2px 5px gray;
     margin: 0 0 5px;
     color: #282825   ;
