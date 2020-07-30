@@ -53,10 +53,10 @@ L.control.scale({imperial:false, position:'bottomright'}).addTo(map);
 
 // create the circles' style
 function getColor(d) {
-        return d === '1 Muy afectado'   ? "#b30000" :
-               d === '2 Afectado'       ? "#fdcc8a" :
-               d === '3 Indiferente'    ? "#ffffb2" :
-               d === '4 Poco Afectado'  ? "#74a9cf" :
+        return d === '1 Very affected'   	? "#b30000" :
+               d === '2 Affected'       	? "#fdcc8a" :
+               d === '3 Indiferent'     	? "#ffffb2" :
+               d === '4 Little affected'  	? "#74a9cf" :
                                           "#045a8d" ;
                       }
 
@@ -92,13 +92,13 @@ var poll=L.geoJson(poll, {
 
 $(document).ready(function() {
 
-  var TITLE = 'Relation between age and worked hours/week';
+  var TITLE = 'Relation between age and level of satisfaction';
 
-  var POINT_X = 'hours'; // column name for x values in data.csv
+  var POINT_X = 'age'; // column name for x values in data.csv
   var POINT_X_PREFIX = ''; // prefix for x values, eg '$'
   var POINT_X_POSTFIX = ''; // postfix for x values, eg '%'
 
-  var POINT_Y = 'age'; // column name for y values in data.csv
+  var POINT_Y = 'satis'; // column name for y values in data.csv
   var POINT_Y_PREFIX = ''; // prefix for x values, eg 'USD '
   var POINT_Y_POSTFIX = ''; // postfix for x values, eg ' kg'
 
@@ -106,8 +106,8 @@ $(document).ready(function() {
   var POINT_COLOR = 'DarkGray'; // point color, eg `black` or `rgba(10, 100, 44, 0.8)`
   var POINT_RADIUS = 4; // radius of each data point
 
-  var X_AXIS = 'Worked hours/week';  // x-axis label and label in tooltip
-  var Y_AXIS = 'Age'; // y-axis label and label in tooltip
+  var X_AXIS = 'Age of respondents';  // x-axis label and label in tooltip
+  var Y_AXIS = 'Level of satisfaction'; // y-axis label and label in tooltip
 
   var SHOW_GRID = true; // `true` to show the grid, `false` to hide
 
@@ -222,7 +222,7 @@ info.addTo(map);
 
     var div = L.DomUtil.create('div', 'info legend'),
         labels = ['<strong>Level of satisfaction</strong>'],
-        categories=['1 Muy afectado', '2 Afectado', '3 Indiferente', '4 Poco Afectado', '5 Nada Afectado'];
+        categories=['1 Very affected', '2 Affected', '3 Indiferent', '4 Little affected', '5 Non affected'];
 // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < categories.length; i++) {
         div.innerHTML +=
